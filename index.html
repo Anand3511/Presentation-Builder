@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Presentation Builder</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Presentation Builder</h1>
+        <form id="presentation-form">
+            <label for="company-title">Company Title:</label>
+            <input type="text" id="company-title" placeholder="Enter Company Title" required>
+
+            <label for="presentation-content">Presentation Content:</label>
+            <textarea id="presentation-content" placeholder="Enter Content for the Presentation" rows="6" required></textarea>
+
+            <button type="button" id="generate">Generate Presentation</button>
+        </form>
+
+        <div id="presentation-preview" class="presentation-preview">
+            <div id="presentation">
+                <h1 id="title-output">Company Title</h1>
+                <p id="content-output">Presentation content will appear here...</p>
+            </div>
+        </div>
+
+        <button type="button" id="download-pdf">Download PDF</button>
+    </div> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf/0.10.0/html2pdf.bundle.min.js"></script>
+<script src="basic.js"></script>
+    
+</body>
+</html>
